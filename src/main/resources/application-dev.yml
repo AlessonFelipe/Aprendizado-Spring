@@ -7,7 +7,7 @@ spring:
     show-sql: true
     open-in-view: false
     hibernate:
-      ddl-auto: create
+      ddl-auto: create #validate / update / create / create-drop
     properties:
         hibernate:
           format_sql: true
@@ -21,16 +21,4 @@ spring:
         web-allow-others: false
 
 
-# DATASOURCE
-#spring.datasource.url: jdbc:h2:mem:sdw2024
-#spring.datasource.driverClassName: org.h2.Driver
-#spring.datasource.username : sa
-#spring.datasource.password: password
-#
-#  # H2 Console
-#spring.h2.console.enable : true
-#spring.h2.console.path : /h2-console
-#
-#  # JPA
-#spring.jpa.database-platform : org.hibernate.dialect.H2Dialect
-#spring.jpa.hibernate.ddl-auto : update
+

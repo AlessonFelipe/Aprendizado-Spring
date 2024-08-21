@@ -1,4 +1,4 @@
-package model;
+package me.dio.domain.model;
 
 import jakarta.persistence.*;
 
@@ -18,9 +18,9 @@ public class Account {
 
     private String agency;
 
-    @Column(scale = 13, precision = 2)
+    @Column(precision = 13, scale = 2)
     private BigDecimal balance;
-    @Column(name = "addtional_limit",scale = 13, precision = 2)
+    @Column(name = "addtional_limit",precision = 13,  scale = 2)
     private BigDecimal limit;
 
     public Long getId() {

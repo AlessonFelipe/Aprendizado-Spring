@@ -1,4 +1,4 @@
-package model;
+package me.dio.domain.model;
 
 import jakarta.persistence.*;
 
@@ -15,7 +15,7 @@ public class Card {
     @Column(unique = true)
     private String number;
 
-    @Column(name = "availabe_limit",scale = 15,precision = 2)
+    @Column(name = "availabe_limit", precision = 13,scale = 2)
     private BigDecimal limit;
 
     public Long getId() {
